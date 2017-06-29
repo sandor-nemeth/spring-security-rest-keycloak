@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'org.springframework.boot' version '1.5.4.RELEASE'
+}
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-security'
+
+    compile 'org.keycloak:keycloak-spring-boot-starter:3.1.0.Final'
+    compile 'org.keycloak:keycloak-spring-security-adapter:3.1.0.Final'
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+}
+
