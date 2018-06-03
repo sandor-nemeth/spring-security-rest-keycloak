@@ -22,7 +22,7 @@ public class HelloEndpoint {
     @Secured("ROLE_USER")
     @GetMapping("/user/hello")
     public String sayHelloToUser(final Principal principal) {
-        return "Hello User" + principal.getName();
+        return "Hello User: " + principal.getName();
     }
 
     @GetMapping("/guest/hello")
