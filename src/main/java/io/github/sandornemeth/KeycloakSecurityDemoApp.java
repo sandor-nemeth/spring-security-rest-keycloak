@@ -19,5 +19,4 @@ public class KeycloakSecurityDemoApp {
     public static void main(final String... args) {
         SpringApplication.run(KeycloakSecurityDemoApp.class, args);
     }
-
 }

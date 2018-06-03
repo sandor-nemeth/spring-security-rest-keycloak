@@ -25,10 +25,6 @@ repositories {
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-security'
-
     compile 'org.keycloak:keycloak-spring-boot-2-starter:4.0.0.Beta3'
-    compile 'org.keycloak:keycloak-spring-security-adapter:4.0.0.Beta3'
-
-    testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
 
