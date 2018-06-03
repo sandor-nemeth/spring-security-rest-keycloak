@@ -1,8 +1,19 @@
-plugins {
-    id 'java'
-    id 'idea'
-    id 'org.springframework.boot' version '1.5.4.RELEASE'
+buildscript {
+    ext {
+        springBootVersion = '2.0.0.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
 }
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
@@ -15,8 +26,8 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-security'
 
-    compile 'org.keycloak:keycloak-spring-boot-starter:3.1.0.Final'
-    compile 'org.keycloak:keycloak-spring-security-adapter:3.1.0.Final'
+    compile 'org.keycloak:keycloak-spring-boot-2-starter:4.0.0.Beta3'
+    compile 'org.keycloak:keycloak-spring-security-adapter:4.0.0.Beta3'
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
