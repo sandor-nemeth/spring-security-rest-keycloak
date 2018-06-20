@@ -3,4 +3,4 @@
 Example REST application utilizing [Keycloak](http://www.keycloak.org) for 
 managing. 
 
-Read the blog post [here](https://sandor-nemeth.github.io/2017/06/15/spring-boot-with-keycloak/)
+Read the blog post [here](https://sandor-nemeth.github.io/java/spring/2017/06/15/spring-boot-with-keycloak.html)
